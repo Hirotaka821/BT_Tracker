@@ -8,10 +8,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/MainBotton4"
+        android:id="@+id/MainButton4"
         android:layout_width="241dp"
         android:layout_height="58dp"
         android:background="#009688"
+        android:onClick="goToHandleActivity"
         android:text="Handling Fever"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
@@ -22,10 +23,11 @@
         app:layout_constraintVertical_bias="0.808" />
 
     <Button
-        android:id="@+id/MainBotton3"
+        android:id="@+id/MainButton3"
         android:layout_width="239dp"
         android:layout_height="59dp"
         android:background="#009688"
+        android:onClick="goToMechanismActivity"
         android:text="Mechanism of Fever"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
@@ -36,10 +38,11 @@
         app:layout_constraintVertical_bias="0.659" />
 
     <Button
-        android:id="@+id/MainBotton2"
+        android:id="@+id/MainButton2"
         android:layout_width="242dp"
         android:layout_height="60dp"
         android:background="#009688"
+        android:onClick="goToNormalActivity"
         android:text="Check Normal Range"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
@@ -49,30 +52,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BT Tracker"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
-
     <Button
-        android:id="@+id/MainBotton1"
+        android:id="@+id/MainButton1"
         android:layout_width="251dp"
         android:layout_height="68dp"
         android:background="#009688"
+        android:onClick="goToLogActivity"
         android:text="Log Body Temperature"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
-        android:onClick="goToLogActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -80,5 +68,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.336"
         tools:text="Log Body Temperature" />
+
+    <View
+        android:id="@+id/titleBackground"
+        android:layout_width="0dp"
+        android:layout_height="194dp"
+        android:background="#375E5A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="40dp"
+        android:text="BT Tracker"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#EFECF3"
+        app:layout_constraintBottom_toBottomOf="@+id/titleBackground"
+        app:layout_constraintStart_toEndOf="@+id/titleImage" />
+
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="95dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
