@@ -7,9 +7,10 @@
     tools:context=".LogActivity">
 
     <TextView
-        android:id="@+id/Log Title"
+        android:id="@+id/LogTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Please log your temperature today"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,7 +20,7 @@
         tools:text="Please log your temperature today" />
 
     <EditText
-        android:id="@+id/log input date"
+        android:id="@+id/LogInputDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -32,12 +33,15 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <Button
-        android:id="@+id/Log save botton"
+        android:id="@+id/LogSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
         tools:text="save" />
 </androidx.constraintlayout.widget.ConstraintLayout>
