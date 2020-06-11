@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BT Tracker</string>
+    <string name="log_body_temperature">Log Body Temperature</string>
+    <string name="check_normal_range">Check Normal Range</string>
+    <string name="mechanism_of_fever">Mechanism of Fever</string>
+    <string name="handling_fever">Handling Fever</string>
+    <string name="normal_human_body_temperature_is_between_36_0_and_37_5">Normal human body temperature is between 36.0 and 37.5</string>
+    <string name="what_to_do_when_you_have_fever">What to do when you have fever?</string>
+    <string name="save">save</string>
+    <string name="please_log_your_temperature_today">Please log your temperature today</string>
+    <string name="why_do_we_have_fever">Why do we have fever ?</string>
+    <string name="useful_links_about_fever">Useful links about fever</string>
 </resources>
